@@ -34,7 +34,7 @@ build/
 
 # Local .terraform directories
 # Terraform
-.terraform/
+.terraform/*
 *.tfstate
 *.tfstate.*
 .crash.log
