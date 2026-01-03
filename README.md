@@ -102,3 +102,30 @@ k describe secret mysecretname -n webapps
     - kubernetes
     - kubernetes CLI
     - Pipeline Stage View
+## STEP8: Setup tools
+- maven --> maven3
+## STEP9: Add credentials
+- github-cred
+- docker-cred
+- k8s-token
+## STEP10: Install docker on nexus server and run nexus as container
+```bash
+docker run -d \
+  --name nexus \
+  -p 8081:8081 \
+  sonatype/nexus3
+```
+## STEP11: Login to nexus contaner and grab the initial password
+## STEP12: configure nexus settings under manage jenkins --> managed files --> add a new config --> select Global Maven settings.xml
+```xml
+<server>
+<id>maven-releases</id>
+<username>admin</username>
+<password>Admin@123</password>
+</server>
+<server>
+<id>maven-snapshots</id>
+<username>admin</username>
+<password>Admin@123</password>
+</server>
+```
