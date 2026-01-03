@@ -152,4 +152,4 @@ docker run -d \
 ```bash
 k get all -n webapps
 ```
-## Result: ACCESS THE LOAD BALANCER
+## Result: ACCESS THE APPLICATION WITH LOAD BALANCER URL
