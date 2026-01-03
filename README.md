@@ -68,6 +68,7 @@ kubectl create namespace webapps
 ```
 ## Create Service Account, Role & Assign that role, And create a secret for Service Account and geenrate a Token
 ### Creating Service Account
+### Bellow yml files available under cluster folder
 ```bash
 k apply -f sa.yml
 ```
