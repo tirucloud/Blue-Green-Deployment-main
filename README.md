@@ -59,7 +59,6 @@ Attach this policy to your user as well
 terraform apply --auto-approve
 ```
 ## STPE6:  update kubeconfig
-## 
 ```bash
 aws eks update-kubeconfig --region ap-south-1 --name devopsshack-cluster
 ```
