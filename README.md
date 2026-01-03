@@ -129,3 +129,26 @@ docker run -d \
 <password>Admin@123</password>
 </server>
 ```
+### STEP13: edit pom.xml
+```xml
+<distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <url>http://13.203.229.39:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>http://13.203.229.39:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+```
+### STEP14: Create a jenkins job with some name (blue-green) copy pipeline script from "jenkinsfile_success" paste into pipline section
+### STEP15: Verify all env's in pipleine are correct
+### STEP16: run the pipeline and cancel it to load parameters
+### STEP17: Now choose blue and blue and click on build
+### STEP18: Now choose Green and Green and click on build
+### STEP19: Now choose Green, Green, switch_traffic and click on build
+### STEP20: Verify
+```bash
+k get all -n webapps
+```
