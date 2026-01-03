@@ -52,17 +52,16 @@ Attach this policy to your user as well
 
 ![Policies To Attach](https://github.com/jaiswaladi246/EKS-Complete/blob/main/Policies.png)
 
-## STEP3: confugre aws cli on local laptop with acceskye and secretekey
+## STEP3: configure aws cli on local laptop with accesskey and secretkey
 ## STPE4: clone github repo
-## STPE5: switch to cluster folder, change ec2 key pair name under main.tf file, create elk cluster using terraform
+## STPE5: switch to cluster folder, change ec2 key pair name under variables.tf file, create elk cluster using terraform
 ```bash
 terraform apply --auto-approve
 ```
 ## STPE6:  update kubeconfig
 ## 
 ```bash
-aws eks update-kubeconfig --region ap-south-1 --name my-eks23
-
+aws eks update-kubeconfig --region ap-south-1 --name devopsshack-cluster
 ```
 ## Create namespace webapps
 ```bash
