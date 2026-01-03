@@ -89,3 +89,16 @@ k apply -f secret.yml -n webapps
 ```bash
 k describe secret mysecretname -n webapps
 ```
+## STEP7: launch 2 servers of t2.medium, one for setting up jenkins and another for nexus
+### On Jenkins-server: 
+- Install docker, jenkins, trivy, kubectl
+- create jenkins user
+- install suggested plugins
+- Install some of the plugins mannually such as
+    - Config File Provider
+    - Maven Integration
+    - Pipeline Maven Integration
+    - Docker Pipeline
+    - kubernetes
+    - kubernetes CLI
+    - Pipeline Stage View
